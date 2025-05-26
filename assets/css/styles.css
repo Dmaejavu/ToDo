@@ -1,0 +1,679 @@
+.testDIV{
+    background-color: red;
+    color: black;
+    padding: 24px 24px;
+}
+
+@font-face{
+    font-family: Mnt-black;
+    src: url("../fonts/Montserrat-Black.ttf"); 
+}
+
+@font-face{
+    font-family: Mnt-blackItalic;
+    src: url("../fonts/Montserrat-BlackItalic.ttf"); 
+}
+
+@font-face {
+    font-family: Mnt-bold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: Mnt-boldItalic;
+    src: url("../fonts/Montserrat-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Mnt-boldEx;
+    src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Mnt-boldItalicEx;
+    src: url("../fonts/Montserrat-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Mnt-lightEx;
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: Mnt-lightItalicEx;
+    src: url("../fonts/Montserrat-ExtraLightItalic.ttf");
+}
+
+@font-face {
+    font-family: Mnt-italic;
+    src: url("../fonts/Montserrat-Italic.ttf");
+}
+
+@font-face {
+    font-family: Mnt-light;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: Mnt-lightItalic;
+    src: url("../fonts/Montserrat-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: Mnt-med;
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: Mnt-medItalic;
+    src: url("../fonts/Montserrat-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: Mnt;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Mnt-semiBold;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Mnt-semiBoldItalic;
+    src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Mnt-thin;
+    src: url("../fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+    font-family: Mnt-thinItalic;
+    src: url("../fonts/Montserrat-ThinItalic.ttf");
+}
+
+:root{
+    --blacken-1: #060606; 
+    --blacken-2: #0C0C0C; 
+    --greyen-1: #171717; 
+    --blacker-green: #0B1215;
+    --black-greener: #0D1717;
+    --l-blue: #101720; 
+    --blue: #011222;
+    --d-blue: #020D19;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    width: max-content;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+input{
+    padding: 8px 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px inset rgba(0, 0, 0, 0.1);
+
+    font-family: Mnt-med;
+    font-size: 16px;
+}
+
+textarea{
+    padding: 4px 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px inset rgba(0, 0, 0, 0.1);
+
+    font-family: Mnt-med;
+    font-size: 16px;
+}
+
+/* LOGIN CSS */
+
+.login-BG{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--blacken-2), var(--blacken-1),var(--greyen-1));
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    background-image: linear-gradient(to bottom, var(--l-blue), var(--blue), var(--d-blue));
+    border-radius: 24px;
+    box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.55);
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 256px;
+    padding: 16px 0px;
+    animation: fadeIn-fBot-tTop 0.7s;
+}
+
+.login-content{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}   
+
+.login-topWrapper{
+    font-family: Mnt-boldEx;
+}
+
+.login-botWrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    margin-top: 32px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.login-botWrapper label{
+    font-family: Mnt-med;
+}
+
+.login-botWrapper input{
+    margin-top: 4px;
+    margin-bottom: 16px;
+
+    padding: 4px 4px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px inset rgba(0, 0, 0, 0.1);
+}
+
+.login-botWrapper input::placeholder{
+    font-family: Mnt-lightEx;
+}
+
+.login-botWrapper button{
+    background-color: white;
+    font-family: Mnt-light;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+
+/* END OF LOGIN CSS */
+
+/* GENERAL CSS */
+
+.mainDIV{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: max-content;
+    position: relative;
+    background-image:linear-gradient(to bottom, var(--l-blue), var(--blue), var(--d-blue));
+}
+
+header{
+    position: sticky;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw; 
+    height: min-content;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    font-family: Mnt-boldEx;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.55);
+    background-image: linear-gradient(to bottom, var(--blacken-1), rgb(50, 50, 50));
+}
+
+header h1{
+    margin-left: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 24px;
+    transition: ease-in-out 0.2s;
+}
+
+header img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+.wrap-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+    overflow-y: auto;
+    animation: fadeIn-fRight-tLeft 0.3s ease-in-out;
+}
+
+.wrapper{ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding-left: 48px;
+    height: max-content;
+    max-width: 100%;
+}
+
+.sectionHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Mnt-black;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 16px 32px;
+    padding-bottom: 8px;
+}
+
+.sectionHeader img{
+    width: auto;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8px;
+    transition: ease-in-out 0.2s;
+}
+
+.sectionHeader img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+.right-sectionHeader{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.doneBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.doneBtn button{
+    visibility: hidden;
+    transition: ease-in-out 0.15s;
+    height: max-content;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: Mnt-bold;
+    background-color: rgb(0, 220, 100);
+}
+
+.doneBtn button:hover{
+    background-color: rgb(0, 255, 120);
+    box-shadow: 0px 0px 8px 4px rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    transition: ease-in-out 0.25s;
+}
+
+.deleteBtn button{
+    visibility: hidden;
+    transition: ease-in-out 0.15s;
+    height: max-content;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: Mnt-bold;
+    background-color: rgb(255, 50, 50);
+}
+
+.deleteBtn button:hover{
+    background-color: rgb(255, 75, 75);
+    box-shadow: 0px 0px 8px 4px rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    transition: ease-in-out 0.25s;
+}
+
+.addTodo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    transition: ease-in-out 0.25s;
+
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+}
+
+.addTodo button{
+    background-color: inherit;
+}
+
+.addTodo:hover{
+    transition: ease-in-out 0.25s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.55);
+}
+
+.addTodo:active{
+    transition: ease-in-out 0.15s;
+    transform: scale(1);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.55); 
+}
+
+.container{
+    display:flex; 
+    flex-direction: column;
+    border-radius: 16px;
+
+    background-color: white;
+    padding: 8px 8px;
+    max-width: 350px;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.done-container{
+    display:flex; 
+    flex-direction: column;
+    border-radius: 16px;
+
+    background-color: white;
+    padding: 8px 8px;
+    max-width: 350px;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.glow{
+    box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.55);
+    transition: ease-in-out 0.25s;
+}
+
+.glow:hover{
+    box-shadow: 0px 0px 32px rgba(255, 255, 255, 0.75);
+    transform: scale(1.02);
+    transition: ease-in-out 0.2s;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    height: max-content;
+    font-family: Mnt-med;
+}
+
+.titleDetails small{
+    margin: 12px 0px;
+    font-family: Mnt-med;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.title-container input{
+    visibility: hidden;
+    width: max-content;
+    margin: auto 8px;
+}
+
+.title-container img{
+    width: auto;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.title-container button{
+    background-color: inherit;
+    transition: ease-in-out 0.2s;
+}
+
+.title-container button:hover{
+    transform: scale(1.1);
+}
+
+.editDIV{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.editDIV label{
+    visibility: hidden;
+}
+
+.content-container{
+    padding: 8px 8px;
+
+    font-family: Mnt-light;
+    word-wrap: break-word;
+    max-width: 100%;
+    max-height: 200px;
+
+    overflow-y: auto;
+}
+
+.modalBG{
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes scaleWhoosh{
+    from{
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+        transition: ease-in-out 0.5s;
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(5);
+        visibility: hidden;
+        transition: ease-in-out 0.2s;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn-fBot-tTop{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn-fRight-tLeft{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeOut-fLeft-tRight{
+    from{
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+@keyframes rotateCW{
+    from{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateCCW{
+    from{
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+.modal-container{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1000px;
+    height: max-content;
+    font-family: Mnt-med;
+    padding: 16px 48px;
+    border-radius: 16px;
+
+    animation: fadeIn-fBot-tTop 0.2s; 
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+}
+
+.modal-container form{
+    width: 100%;
+}
+
+.modal-container h2{
+    font-family: Mnt-bold;
+    font-size: 48px;
+    width: 95%;
+    padding: 16px 16px;
+    margin: 4px 4px;
+    margin-bottom: 32px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.add-container label{
+    font-size: 24px;
+}
+
+.add-container input{
+    margin-top: 8px;
+    margin-left: 16px;
+    width: 75%;
+}
+
+.add-container textarea{
+    margin-top: 8px;
+    margin-left: 16px;
+    width: 90%;
+    height: 150px;
+    max-height: 300px;
+    overflow-x: auto;
+}
+
+.modal-container button{
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    background-color: var(--blacken-2);
+    color: white;
+    font-size: 18px;
+}
+
+.modal-container button:hover{
+    background-color: var(--blacken-1);
+    transform:translate(-1px, -1px);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out 0.2s;
+}
+
+.modal-container button:active{
+    transform: translate(1px, 1px);
+    box-shadow: none;
+    border: 1px inset rgba(200, 200, 200, 0.8);
+}
+
+.modal-container select{
+    margin-top: 8px;
+    margin-left: 16px;
+    width: 75%;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px inset rgba(0, 0, 0, 0.1);
+    font-family: Mnt-lightEx;
+    font-size: 16px;
+}
+
+/* END OF GENERAL CSS */
